@@ -25,12 +25,17 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "turbo": "^2.5.4",
+    "turbo": "^2.5.8",
     "husky": "^9.1.7",
-    "lint-staged": "^16.1.2"
+    "lint-staged": "^16.1.2",
+    "@types/bun": "latest"
   },
   "lint-staged": {
     "**/*.{js,mjs,cjs,jsx,ts,mts,cts,tsx,vue,astro,svelte}": "echo 'Skipping lint, shouldn't do this'"
   },
-  "packageManager": "bun@1.2.22"
+  "packageManager": "bun@1.2.22",
+  "module": "index.ts",
+  "peerDependencies": {
+    "typescript": "^5"
+  }
 }
