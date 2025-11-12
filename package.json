@@ -30,7 +30,8 @@
     "lint-staged": "^16.1.2"
   },
   "lint-staged": {
-    "**/*.{js,mjs,cjs,jsx,ts,mts,cts,tsx,vue,astro,svelte}": ""
+    "**/*.{js,mjs,cjs,jsx,ts,mts,cts,tsx,vue,astro,svelte}": "",
+    "!(**/routeTree.gen.ts)": ""
   },
   "packageManager": "bun@1.2.22"
 }
