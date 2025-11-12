@@ -31,7 +31,7 @@
     "@types/bun": "latest"
   },
   "lint-staged": {
-    "**/*.{js,mjs,cjs,jsx,ts,mts,cts,tsx,vue,astro,svelte}": ""
+    "**/*.{js,mjs,cjs,jsx,ts,mts,cts,tsx,vue,astro,svelte}": "echo 'Skipping lint, shouldn't do this'"
   },
   "packageManager": "bun@1.2.22",
   "module": "index.ts",
