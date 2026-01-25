@@ -1,5 +1,5 @@
 {
-  "name": "fivesight2",
+  "name": "fivesight",
   "private": true,
   "scripts": {
     "build": "turbo run build",
