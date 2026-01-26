@@ -7,8 +7,8 @@ import {
     Graphics,
     Sprite,
 } from 'pixi.js';
-import { BunnySprite } from "~/BunnySprite.js";
-import { BoardProps } from '~/types.js';
+import { BunnySprite } from "./BunnySprite.js";
+import { BoardProps } from './types.js';
 
 // extend tells @pixi/react what Pixi.js components are available
 extend({
