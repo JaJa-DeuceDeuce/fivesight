@@ -6,7 +6,8 @@
   "exports": {
     "./base.json": "./base.json",
     "./nextjs.json": "./nextjs.json",
-    "./react-library.json": "./react-library.json"
+    "./react-library.json": "./react-library.json",
+    "./react-router.json": "./react-router.json"
   },
   "publishConfig": {
     "access": "public"
