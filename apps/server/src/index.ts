@@ -1,9 +1,11 @@
-import { Elysia } from "elysia";
 import cors from "@elysiajs/cors";
-import { env } from "@fivesight/env/server";
 import { auth } from "@fivesight/auth";
+import { env } from "@fivesight/env/server";
+import { Elysia } from "elysia";
+import { logger } from "@grotto/logysia";
 
 const app = new Elysia()
+  .use(logger())
   .use(
     cors({
       origin: env.CORS_ORIGIN,

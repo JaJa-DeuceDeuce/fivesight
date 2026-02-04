@@ -8,10 +8,11 @@
   },
   "dependencies": {
     "@elysiajs/cors": "^1.4.1",
-    "elysia": "latest",
-    "@fivesight/env": "workspace:*",
     "@fivesight/auth": "workspace:*",
-    "@fivesight/db": "workspace:*"
+    "@fivesight/db": "workspace:*",
+    "@fivesight/env": "workspace:*",
+    "@grotto/logysia": "^0.1.6",
+    "elysia": "latest"
   },
   "devDependencies": {
     "@fivesight/typescript-config": "workspace:*",
