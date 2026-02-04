@@ -1,0 +1,38 @@
+{
+  "name": "@fivesight/db",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "exports": {
+    ".": {
+      "default": "./src/index.ts"
+    },
+    "./*": {
+      "default": "./src/*.ts"
+    }
+  },
+  "scripts": {
+    "db:push": "drizzle-kit push",
+    "db:generate": "drizzle-kit generate",
+    "db:studio": "drizzle-kit studio",
+    "db:migrate": "drizzle-kit migrate"
+  },
+  "devDependencies": {
+    "@fivesight/env": "workspace:*",
+    "@fivesight/typescript-config": "workspace:*",
+    "@types/bun": "latest",
+    "@types/pg": "^8.16.0",
+    "drizzle-kit": "^0.31.8",
+    "tsx": "^4.21.0"
+  },
+  "peerDependencies": {
+    "typescript": "catalog:"
+  },
+  "dependencies": {
+    "arkenv": "catalog:",
+    "arktype": "catalog:",
+    "dotenv": "catalog:",
+    "drizzle-orm": "^0.45.1",
+    "pg": "^8.18.0"
+  }
+}

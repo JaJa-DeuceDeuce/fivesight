@@ -1,0 +1,4 @@
+{
+  "extends": "@fivesight/typescript-config/base.json",
+  "include": ["src/**/*"],
+}

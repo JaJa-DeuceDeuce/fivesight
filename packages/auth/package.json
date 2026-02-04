@@ -1,0 +1,27 @@
+{
+  "name": "@fivesight/auth",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "exports": {
+    ".": {
+      "default": "./src/index.ts"
+    },
+    "./*": {
+      "default": "./src/*.ts"
+    }
+  },
+  "devDependencies": {
+    "@fivesight/typescript-config": "workspace:*",
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "catalog:"
+  },
+  "dependencies": {
+    "better-auth": "catalog:",
+    "dotenv": "catalog:",
+    "@fivesight/env": "workspace:*",
+    "@fivesight/db": "workspace:*"
+  }
+}

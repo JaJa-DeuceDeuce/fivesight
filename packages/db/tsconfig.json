@@ -1,0 +1,10 @@
+{
+  "extends": "@fivesight/typescript-config/base.json",
+  "include": ["src/**/*"],
+  "compilerOptions": {
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "outDir": "dist",
+  },
+}
