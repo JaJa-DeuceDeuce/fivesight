@@ -1,0 +1,19 @@
+{
+  "name": "api",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@fivesight/typescript-config": "workspace:*"
+  },
+  "peerDependencies": {
+    "typescript": "catalog:"
+  },
+  "dependencies": {
+    "@elysiajs/eden": "^1.4.6",
+    "elysia": "catalog:",
+    "@fivesight/server": "workspace:*",
+    "@fivesight/env": "workspace:*"
+  }
+}

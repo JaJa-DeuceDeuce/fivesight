@@ -12,11 +12,13 @@
     "@fivesight/db": "workspace:*",
     "@fivesight/env": "workspace:*",
     "@grotto/logysia": "^0.1.6",
-    "elysia": "latest"
+    "elysia": "catalog:",
+    "arktype": "catalog:"
   },
   "devDependencies": {
     "@fivesight/typescript-config": "workspace:*",
     "bun-types": "latest"
   },
-  "module": "src/index.js"
+  "module": "src/index.js",
+  "types": "src/index.ts"
 }
