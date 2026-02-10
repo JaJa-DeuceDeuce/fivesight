@@ -2,6 +2,10 @@
   "extends": "@fivesight/typescript-config/base.json",
   "include": ["src/**/*"],
   "compilerOptions": {
+    "moduleResolution": "bundler",
+    "module": "ESNext",
+    "allowImportingTsExtensions": true,
+    "emitDeclarationOnly": true,
     "declaration": true,
     "declarationMap": true,
     "sourceMap": true,
