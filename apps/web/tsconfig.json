@@ -1,4 +1,10 @@
 {
   "extends": "@fivesight/typescript-config/react-router.json",
   "include": ["./src/**/*"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+    },
+  },
 }
