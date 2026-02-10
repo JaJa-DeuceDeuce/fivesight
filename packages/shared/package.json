@@ -1,15 +1,23 @@
 {
-  "name": "shared",
+  "name": "@fivesight/shared",
   "module": "index.ts",
   "type": "module",
   "private": true,
+  "exports": {
+    ".": {
+      "default": "./src/index.ts"
+    },
+    "./*": {
+      "default": "./src/*.ts"
+    }
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },
   "peerDependencies": {
-    "typescript": "^5"
+    "typescript": "catalog:"
   },
   "dependencies": {
-    "arktype": "^2.1.29"
+    "arktype": "catalog:"
   }
 }
