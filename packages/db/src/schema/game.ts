@@ -1,4 +1,4 @@
-import { user } from "./auth.js";
+import { user } from "./auth.ts";
 import { createInsertSchema } from "drizzle-arktype";
 import { createSelectSchema } from "drizzle-arktype";
 import { pgTable, text, jsonb, timestamp, index, pgEnum, uuid, uniqueIndex } from "drizzle-orm/pg-core";

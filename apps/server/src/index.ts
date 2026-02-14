@@ -3,8 +3,9 @@ import { env } from "@fivesight/env/server";
 import { Elysia } from "elysia";
 import { auth as authController } from "./auth/controller"
 import { todoController } from "./example/controller";
+import { gameController } from "./game/controller";
 
-const app = new Elysia()
+const app = new Elysia({ prefix: "/api" })
   .use(
     cors({
       origin: env.CORS_ORIGIN,
@@ -17,6 +18,7 @@ const app = new Elysia()
   .get("/", () => "OK")
   .get("/hi", () => 'Hi Elyssia')
   .use(todoController)
+  .use(gameController)
   .listen(env.PORT, () => {
     console.log(`Server is running on http://localhost:${env.PORT} 🦊}`)
   })

@@ -3,6 +3,7 @@ import { drizzleAdapter } from "better-auth/adapters/drizzle";
 import { env } from "@fivesight/env/server";
 import { db } from  "@fivesight/db";
 import * as schema from "@fivesight/db/schema/auth";
+import { openAPI } from "better-auth/plugins";
 
 // This is our auth, it controls what auth we use and how it works and whatnot
 export const auth = betterAuth({
@@ -21,5 +22,7 @@ export const auth = betterAuth({
       httpOnly: true,
     },
   },
-  plugins: [],
+  plugins: [
+    openAPI(),
+  ],
 })

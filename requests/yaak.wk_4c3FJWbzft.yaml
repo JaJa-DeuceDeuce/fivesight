@@ -1,0 +1,15 @@
+type: workspace
+model: workspace
+id: wk_4c3FJWbzft
+createdAt: 2026-02-06T16:07:02.188705
+updatedAt: 2026-02-06T16:07:02.188706
+authentication: {}
+authenticationType: null
+description: ''
+headers: []
+name: Fivesight
+encryptionKeyChallenge: null
+settingValidateCertificates: true
+settingFollowRedirects: true
+settingRequestTimeout: 0
+settingDnsOverrides: []

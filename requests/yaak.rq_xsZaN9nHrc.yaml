@@ -1,0 +1,31 @@
+type: http_request
+model: http_request
+id: rq_xsZaN9nHrc
+createdAt: 2026-02-10T07:28:33.552500
+updatedAt: 2026-02-10T07:32:59.482668
+workspaceId: wk_4c3FJWbzft
+folderId: fl_vQSZopiLLN
+authentication: {}
+authenticationType: null
+body:
+  text: |-
+    {
+      "gameData": {
+        "mode": "multi",
+        "hostColor": "black",
+        "password": "${[ faker.internet.password() ]}"
+      },
+      "hostUserId": "E3MNei9hzCeOmpgTPozHwCyC1bCWhYEl"
+    }
+bodyType: application/json
+description: ''
+headers:
+- enabled: true
+  name: Content-Type
+  value: application/json
+  id: ZB5WAjb2VJ
+method: POST
+name: Create Game (mp)
+sortPriority: 1000.001
+url: http://localhost:3001/api/game/create
+urlParameters: []

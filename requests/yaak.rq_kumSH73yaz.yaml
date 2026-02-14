@@ -1,0 +1,29 @@
+type: http_request
+model: http_request
+id: rq_kumSH73yaz
+createdAt: 2026-02-06T23:11:50.917002
+updatedAt: 2026-02-10T07:28:06.135543
+workspaceId: wk_4c3FJWbzft
+folderId: fl_vQSZopiLLN
+authentication: {}
+authenticationType: null
+body:
+  text: |-
+    {
+      "gameData": {
+        "mode": "single"
+      },
+      "hostUserId": "E3MNei9hzCeOmpgTPozHwCyC1bCWhYEl"
+    }
+bodyType: application/json
+description: ''
+headers:
+- enabled: true
+  name: Content-Type
+  value: application/json
+  id: ZB5WAjb2VJ
+method: POST
+name: Create Game (1p)
+sortPriority: 1000.0
+url: http://localhost:3001/api/game/create
+urlParameters: []

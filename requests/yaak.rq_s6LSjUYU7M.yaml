@@ -1,0 +1,28 @@
+type: http_request
+model: http_request
+id: rq_s6LSjUYU7M
+createdAt: 2026-02-10T06:52:10.701514
+updatedAt: 2026-02-10T07:23:17.572517
+workspaceId: wk_4c3FJWbzft
+folderId: fl_Y5dyHQ6YXK
+authentication: {}
+authenticationType: null
+body:
+  text: |-
+    {
+      "name": "${[ faker.person.fullName() ]}",
+      "email": "${[ faker.internet.email() ]}",
+      "password": "${[ faker.animal.cat() ]}@gmail.com"
+    }
+bodyType: application/json
+description: Creates a random user
+headers:
+- enabled: true
+  name: Content-Type
+  value: application/json
+  id: ZB5WAjb2VJ
+method: POST
+name: Create User
+sortPriority: 0.0
+url: http://localhost:3001/api/auth/sign-up/email
+urlParameters: []
